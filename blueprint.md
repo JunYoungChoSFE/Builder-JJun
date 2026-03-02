@@ -14,12 +14,14 @@ This is a modern web application that generates random lottery numbers (6 unique
 *   **Animations:** Smooth entry animations for generated numbers and theme transitions.
 *   **Partnership Inquiry:** A contact form powered by Formspree for business inquiries.
 *   **Comments Section:** Integrated Disqus for user feedback and discussion.
+*   **Monetization:** Google AdSense integration for ad revenue.
 
 ## Project Structure
 
 *   `index.html`: Main structure with theme toggle and container.
 *   `style.css`: Uses CSS Variables for theming and modern Baseline features.
 *   `main.js`: Handles generation logic, UI updates, and theme switching.
+*   `ads.txt`: Authorized Digital Sellers file for AdSense.
 
 ## Implementation Details
 
@@ -35,3 +37,7 @@ This is a modern web application that generates random lottery numbers (6 unique
 
 ### Comments Integration
 *   Disqus Universal Code implemented with a custom container for consistent UI.
+
+### AdSense Integration
+*   Verification meta tag and auto-ads script added to `<head>`.
+*   `ads.txt` file created in the root for seller verification.
