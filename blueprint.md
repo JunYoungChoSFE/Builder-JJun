@@ -12,6 +12,7 @@ This is a modern web application that generates random lottery numbers (6 unique
 *   **Theme Support:** Toggle between Light and Dark modes.
 *   **Persistence:** Saves theme preference in `localStorage`.
 *   **Animations:** Smooth entry animations for generated numbers and theme transitions.
+*   **Partnership Inquiry:** A contact form powered by Formspree for business inquiries.
 
 ## Project Structure
 
