@@ -1,22 +1,32 @@
-
 # Lotto Number Generator
 
 ## Overview
 
-This is a simple web application that generates random lottery numbers.
+This is a modern web application that generates random lottery numbers (6 unique numbers between 1 and 45) with a sleek UI and theme support.
 
-## Current Plan
+## Features
 
-### Feature: Lotto Number Generator
+*   **Random Generation:** Generates 6 unique numbers between 1 and 45.
+*   **Sorted Results:** Numbers are displayed in ascending order for better readability.
+*   **Modern UI:** Clean, responsive design with card-based layout and depth effects.
+*   **Theme Support:** Toggle between Light and Dark modes.
+*   **Persistence:** Saves theme preference in `localStorage`.
+*   **Animations:** Smooth entry animations for generated numbers and theme transitions.
 
-*   **Objective:** Create a user interface to generate and display 6 unique random numbers between 1 and 45.
-*   **HTML (`index.html`):**
-    *   Set up the basic HTML structure with a title, a container for the numbers, and a "Generate" button.
-*   **CSS (`style.css`):**
-    *   Style the page for a clean and modern look.
-    *   Style the number display to be clear and readable.
-    *   Style the button to be interactive.
-*   **JavaScript (`main.js`):**
-    *   Implement the logic to generate 6 unique random numbers.
-    *   Add an event listener to the button to trigger the number generation.
-    *   Update the UI to display the generated numbers.
+## Project Structure
+
+*   `index.html`: Main structure with theme toggle and container.
+*   `style.css`: Uses CSS Variables for theming and modern Baseline features.
+*   `main.js`: Handles generation logic, UI updates, and theme switching.
+
+## Implementation Details
+
+### Theme Toggle
+*   Uses `data-theme` attribute on the `<html>` element.
+*   CSS variables handle all color transitions.
+*   JavaScript manages toggle state and persistence.
+
+### Number Generation
+*   Uses a `Set` to guarantee 6 unique values.
+*   `Array.sort()` ensures numbers are ordered.
+*   Dynamic creation of DOM elements with staggered CSS transitions.
