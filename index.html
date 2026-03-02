@@ -3,51 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lotto Number Generator</title>
+    <meta name="description" content="Free, easy-to-use Lotto Number Generator. Generate 6 truly random, unbiased numbers between 1 and 45 for your next lottery ticket.">
+    <meta name="keywords" content="lotto, lottery, number generator, random numbers, quick pick, lucky numbers">
+    <title>Premium Lotto Number Generator | Get Your Lucky Numbers</title>
     <meta name="google-adsense-account" content="ca-pub-5189204077068800">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5189204077068800"
      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="theme-toggle">
-        <button id="theme-btn" aria-label="Toggle Theme">🌓</button>
-    </div>
-    <div class="container">
-        <h1>Lotto Number Generator</h1>
-        <div class="numbers">
-            <!-- Numbers will appear here -->
+    <header class="site-header">
+        <div class="header-content">
+            <div class="logo">🍀 LottoGen</div>
+            <nav>
+                <a href="#generator">Generator</a>
+                <a href="#about">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="theme-toggle">
+                <button id="theme-btn" aria-label="Toggle Theme">🌓</button>
+            </div>
         </div>
-        <button id="generate">Generate Numbers</button>
-    </div>
+    </header>
 
-    <div class="contact-container">
-        <h2>Partnership Inquiry</h2>
-        <form action="https://formspree.io/f/mjgeqgvy" method="POST">
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    <main>
+        <section id="generator" class="container">
+            <h1>Lotto Number Generator</h1>
+            <p class="subtitle">Instantly generate 6 unique random numbers from 1 to 45.</p>
+            <div class="numbers">
+                <!-- Numbers will appear here -->
             </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
-            </div>
-            <button type="submit" class="submit-btn">Send Inquiry</button>
-        </form>
-    </div>
+            <button id="generate">Generate My Numbers</button>
+        </section>
 
-    <div class="comments-container">
-        <div id="disqus_thread"></div>
-        <script>
-            (function() { // DON'T EDIT BELOW THIS LINE
-            var d = document, s = d.createElement('script');
-            s.src = 'https://jun-builder.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+        <section id="about" class="content-section">
+            <h2>Why Use Our Lotto Generator?</h2>
+            <p>Choosing lottery numbers can be stressful. Many people fall into the trap of using birthdays or anniversaries, which limits their number selection to 1-31. This means if higher numbers are drawn, you have a lower chance of winning alongside fewer people.</p>
+            <p>Our <strong>Premium Lotto Number Generator</strong> uses advanced mathematical algorithms built into your browser to ensure absolute randomness. Every time you click the button, you receive a fresh, unbiased, and completely random set of 6 numbers ranging from 1 to 45.</p>
+            <h3>Features:</h3>
+            <ul>
+                <li><strong>100% Free:</strong> No hidden fees or subscriptions.</li>
+                <li><strong>True Randomness:</strong> Powered by reliable JavaScript Math libraries.</li>
+                <li><strong>Privacy First:</strong> Your numbers are generated locally on your device. We don't track or store them.</li>
+                <li><strong>Instant Sorting:</strong> Numbers are automatically sorted in ascending order for easy reading.</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="content-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can this tool guarantee a win?</h3>
+                <p>No tool can guarantee a lottery win. The lottery is a game of pure chance. This generator is designed to provide you with truly random numbers, removing human bias from your selection process.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How are the numbers generated?</h3>
+                <p>We use your browser's native pseudorandom number generator (PRNG) to select numbers. The algorithm ensures that no duplicate numbers are chosen within the same draw, perfectly mimicking a real lottery machine.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-container">
+            <h2>Partnership Inquiry</h2>
+            <p style="text-align: center; margin-bottom: 1.5rem; font-size: 0.95rem; color: var(--text-color); opacity: 0.8;">Have a business proposal or need custom development? Contact us below.</p>
+            <form action="https://formspree.io/f/mjgeqgvy" method="POST">
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Send Inquiry</button>
+            </form>
+        </section>
+
+        <section class="comments-container">
+            <div id="disqus_thread"></div>
+            <script>
+                (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jun-builder.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 LottoGen. All rights reserved. Play responsibly.</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
