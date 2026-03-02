@@ -49,6 +49,18 @@ body {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.comments-container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--card-shadow);
+    max-width: 500px;
+    width: 90%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
 .contact-container h2 {
     margin-top: 0;
     margin-bottom: 1.5rem;

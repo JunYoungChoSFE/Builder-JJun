@@ -13,6 +13,7 @@ This is a modern web application that generates random lottery numbers (6 unique
 *   **Persistence:** Saves theme preference in `localStorage`.
 *   **Animations:** Smooth entry animations for generated numbers and theme transitions.
 *   **Partnership Inquiry:** A contact form powered by Formspree for business inquiries.
+*   **Comments Section:** Integrated Disqus for user feedback and discussion.
 
 ## Project Structure
 
@@ -31,3 +32,6 @@ This is a modern web application that generates random lottery numbers (6 unique
 *   Uses a `Set` to guarantee 6 unique values.
 *   `Array.sort()` ensures numbers are ordered.
 *   Dynamic creation of DOM elements with staggered CSS transitions.
+
+### Comments Integration
+*   Disqus Universal Code implemented with a custom container for consistent UI.
